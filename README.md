@@ -1,4 +1,4 @@
-# Notes from Sandi Metz's book Practical Object Oriented Design in Ruby
+# Notes from Sandi Metz's _Practical Object Oriented Design in Ruby_
 
 ## SOLID
 - Single Responsibilty
