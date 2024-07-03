@@ -19,6 +19,11 @@ Each of these principles offers a unique perspective on code management, highlig
 ## Law of Demeter
 The Law of Demeter recommends that objects should avoid accessing the internal data and methods of other objects. Instead, an object should only interact with its immediate dependencies.
 
+## Software Dependencies
+A software dependency is a relationship between software components where one component relies on another to function properly. For example, if a software application uses a library to query a database, the application depends on that library.
+
+Software dependencies can be broadly classified into two categories: direct and transitive. Direct dependencies are explicitly defined and used by a software component. Transitive dependencies, on the other hand, are the libraries or modules that are indirectly used by a software component, such as when a library relies on other libraries to function.
+
 ## Manifesto for Agile Software Development
 Agile Software Development values:
 - **Individuals and interactions** over processes and tools
