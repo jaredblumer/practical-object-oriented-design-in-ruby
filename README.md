@@ -7,7 +7,12 @@
 - Interface Segregation
 - Dependency Injection
 
-## DRY (Don't Repeat Yourself)
+## DRY, WET, and AHA
+_Don't Repeat Yourself_ (DRY) is a principle of software development aimed at reducing repetition of information which is likely to change, replacing it with abstractions that are less likely to change.
+
+The opposing view to DRY is called WET, a backcronym commonly taken to stand for _Write Everything Twice_,  or alternatively _Write Every time_, _We Enjoy Typing_, or _Waste Everyone's Time_.
+
+AHA stands for avoid hasty abstractions, which prefers duplication over the wrong abstraction. AHA programming assumes that both WET and DRY solutions inevitibly create software that is rigid and difficult to maintain.
 
 ## Law of Demeter
 The Law of Demeter recommends that objects should avoid accessing the internal data and methods of other objects. Instead, an object should only interact with its immediate dependencies.
@@ -34,4 +39,11 @@ While there is value in the items on the right, Agile Software Development value
 - Simplicity--the art of maximizing the amount of work not done--is essential.
 - The best architectures, requirements, and designs emerge from self-organizing teams.
 - At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
-- 
+
+## BUFD: Big Up Front Design
+Agile believes that your customers can't define the software they want before seeing it, so it's best to show them sooner rather than later.
+
+There's no reason to do a Big Up Front Design (BUFD) because it cannot possibly be correct, and no one cannot predict when the application will be done, because no one knows in advance what it will eventually do.
+
+# Technical Debt
+Technical debt (also known as tech debt or code debt) describes what results when development teams take actions to expedite the delivery of a piece of functionality or a project which later needs to be refactored.
