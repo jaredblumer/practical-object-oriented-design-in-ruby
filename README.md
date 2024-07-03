@@ -52,5 +52,5 @@ Agile believes that your customers can't define the software they want before se
 
 There's no reason to do a Big Up Front Design (BUFD) because it cannot possibly be correct, and no one cannot predict when the application will be done, because no one knows in advance what it will eventually do.
 
-# Technical Debt
+## Technical Debt
 Technical debt (also known as tech debt or code debt) describes what results when development teams take actions to expedite the delivery of a piece of functionality or a project which later needs to be refactored.
