@@ -14,6 +14,8 @@ The opposing view to DRY is called WET, a backcronym commonly taken to stand for
 
 AHA stands for avoid hasty abstractions, which prefers duplication over the wrong abstraction. AHA programming assumes that both WET and DRY solutions inevitibly create software that is rigid and difficult to maintain.
 
+Each of these principles offers a unique perspective on code management, highlighting the importance of balancing abstraction and duplication to maintain flexible and maintainable software.
+
 ## Law of Demeter
 The Law of Demeter recommends that objects should avoid accessing the internal data and methods of other objects. Instead, an object should only interact with its immediate dependencies.
 
