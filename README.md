@@ -54,3 +54,11 @@ There's no reason to do a Big Up Front Design (BUFD) because it cannot possibly 
 
 ## Technical Debt
 Technical debt (also known as tech debt or code debt) describes what results when development teams take actions to expedite the delivery of a piece of functionality or a project which later needs to be refactored.
+
+## Writing Code That Embraces Changes
+The goal is to model your application, using classes, such that it does what it is supposed to do right now and is also easy to change later.
+
+- A class must have data and behavior and it should do the smallest possible useful thing; that is, it should have a single responsibility.
+- Hide instance variables and data structures.
+- Methods, like classes, should have a single responsibility. Methods with a single responsibility expose previously hidden qualities, avoid the need for comments, encourage reuse, and are easy to move to another class when refactoring.
+- If you have a muddled class with too many responsibilities, separate those responsilities intop different classes.
