@@ -62,3 +62,15 @@ The goal is to model your application, using classes, such that it does what it 
 - Hide instance variables and data structures.
 - Methods, like classes, should have a single responsibility. Methods with a single responsibility expose previously hidden qualities, avoid the need for comments, encourage reuse, and are easy to move to another class when refactoring.
 - If you have a muddled class with too many responsibilities, separate those responsilities intop different classes.
+
+## Managing Dependencies
+Because well designed objects ahve a single responsibility, their very nature requires that they collaborate to accomplsh complex tasks.
+
+An object has a dependency when it knows:
+
+- The name of another class.
+- The name of a message that it intends to send to someone other than _self_.
+- The arguments that a message requires.
+- The order of those arguments.
+
+The design challenge is to manage dependencies so that each class has the fewest possible; a class should know just enough to do its job and not one thing more.
