@@ -74,3 +74,6 @@ An object has a dependency when it knows:
 - The order of those arguments.
 
 The design challenge is to manage dependencies so that each class has the fewest possible; a class should know just enough to do its job and not one thing more.
+
+## Dependency Injection
+Dependency injection is a programming technique in which an object or function receives other objects or functions that it requires, as opposed to creating them internally. Dependency injection aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.
