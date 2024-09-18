@@ -34,7 +34,7 @@ Agile Software Development values:
 While there is value in the items on the right, Agile Software Development values items on the left more.
 
 ## Agile Principles
-- Our highest priority is to satisfy the cystomer through early and continuous delivery of valuable software.
+- Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 - Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
 - Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
 - Business people and developers must work together daily throughout the project.
@@ -55,16 +55,16 @@ There's no reason to do a Big Up Front Design (BUFD) because it cannot possibly 
 ## Technical Debt
 Technical debt (also known as tech debt or code debt) describes what results when development teams take actions to expedite the delivery of a piece of functionality or a project which later needs to be refactored.
 
-## Writing Code That Embraces Changes
+## Writing Code That Embraces Change
 The goal is to model your application, using classes, such that it does what it is supposed to do right now and is also easy to change later.
 
 - A class must have data and behavior and it should do the smallest possible useful thing; that is, it should have a single responsibility.
 - Hide instance variables and data structures.
 - Methods, like classes, should have a single responsibility. Methods with a single responsibility expose previously hidden qualities, avoid the need for comments, encourage reuse, and are easy to move to another class when refactoring.
-- If you have a muddled class with too many responsibilities, separate those responsilities intop different classes.
+- If you have a muddled class with too many responsibilities, separate those responsilities into different classes.
 
 ## Managing Dependencies
-Because well designed objects ahve a single responsibility, their very nature requires that they collaborate to accomplsh complex tasks.
+Because well designed objects have a single responsibility, their very nature requires that they collaborate to accomplsh complex tasks.
 
 An object has a dependency when it knows:
 
@@ -77,3 +77,14 @@ The design challenge is to manage dependencies so that each class has the fewest
 
 ## Dependency Injection
 Dependency injection is a programming technique in which an object or function receives other objects or functions that it requires, as opposed to creating them internally. Dependency injection aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.
+
+## Remove Argument-Order Dependencies
+Utilize keyword arguments to avoid depending on positional arguments. Keyword arguments can be passed in any order and adds clarity.
+
+## Explicitly Define Defaults
+Keyword arguments allow you to set defaults in the arguments list. Adding a default renders the keyword argument optional.
+
+## Using Modules
+Modules, like classes, hold methods. However, modules can not be instantiated. In other words, it is not possible to create objects from a module. Furthermore, modules do not utilize the method `new`.
+
+Modules are userful for sharing methods between classes. Methods can be included into classes, in order to make their methods available to the class. Modules are useful when we have methods that we want to reuse in certain classes, but also want to keep them in a central place to reduce duplication.
